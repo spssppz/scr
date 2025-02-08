@@ -2286,7 +2286,7 @@ body::after {
 }
 
 .hero-nat__title:not(:last-child) {
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-nat__descr {
@@ -3243,6 +3243,7 @@ body::after {
 .benefits__title {
   font-weight: 600;
   font-size: 2.25rem;
+  text-align: center;
 }
 
 .benefits__title span {
@@ -3302,7 +3303,7 @@ body::after {
 .benefit__descr {
   font-weight: 500;
   font-size: 1.125rem;
-  color: #81bd52;
+  color: rgba(0, 0, 0, 0.7);
   line-height: 1.5;
 }
 
@@ -4184,10 +4185,6 @@ body::after {
     font-size: 2rem;
   }
 
-  .hero-nat__title:not(:last-child) {
-    margin-bottom: 0.9375rem;
-  }
-
   .hero-nat__descr {
     font-size: 1rem;
   }
@@ -4494,7 +4491,6 @@ body::after {
 
   .benefits__title {
     font-size: 2rem;
-    text-align: center;
   }
 
   .benefits__title:not(:last-child) {
