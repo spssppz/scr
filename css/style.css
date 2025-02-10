@@ -2656,7 +2656,7 @@ body::after {
 .gain-col {
   border: 0.0625rem solid #81bd52;
   border-radius: 0.9375rem;
-  padding: 1.25rem 1.25rem;
+  padding: 4.4375rem 1rem 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2664,9 +2664,6 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .gain-col__icon {
@@ -3331,22 +3328,26 @@ body::after {
 }
 
 @media (min-width: 29.99875em) {
-  .gain-col:nth-child(2) .gain-col__icon {
-    margin-top: -5.25rem;
+  .gain-col {
+    position: relative;
   }
 
-  .gain-col:nth-child(5) .gain-col__icon {
-    margin-top: -6rem;
+  .gain-col:nth-child(2) .gain-col__icon {
+    top: -3rem;
   }
 
   .gain-col__icon {
-    max-width: 10rem;
-    margin: 0 auto;
-    margin-top: -5.75rem;
+    width: 10rem;
+    position: absolute;
+    left: 50%;
+    top: -3.625rem;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 
   .gain-col__icon:not(:last-child) {
-    margin-bottom: 0.9375rem;
+    margin-bottom: -1.0625rem;
   }
 }
 
@@ -3578,11 +3579,6 @@ body::after {
 
   .nat-we-work-col__spoller-body {
     display: none;
-  }
-
-  .gain-col:nth-child(even) {
-    position: relative;
-    top: -0.9375rem;
   }
 
   .choose__title:not(:last-child) {
@@ -4275,7 +4271,7 @@ body::after {
   }
 
   .gain-col {
-    padding: 1rem;
+    padding: 4.4375rem 1rem 1rem;
   }
 
   .choose {
@@ -5003,13 +4999,13 @@ body::after {
   }
 
   .gain__cols {
-    gap: 0.625rem;
+    gap: 5rem 1.25rem;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
   .gain-col {
-    padding: 1rem 0.875rem;
+    padding: 4.4375rem 1rem 0.875rem;
   }
 
   .gain-col__descr {
@@ -5445,11 +5441,13 @@ body::after {
   }
 
   .gain__cols {
+    gap: 0.625rem;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
   .gain-col {
+    padding: 1rem 0.875rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5635,9 +5633,9 @@ body::after {
   }
 
   .gain-col:hover .gain-col__icon {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: translate(-50%, 0) scale(1.05);
+        -ms-transform: translate(-50%, 0) scale(1.05);
+            transform: translate(-50%, 0) scale(1.05);
     opacity: 0.9;
   }
 
